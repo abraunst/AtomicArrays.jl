@@ -1,0 +1,16 @@
+name = "AtomicArrays"
+uuid = "47b95ec9-9f64-4e52-930c-0b1ac2f8934e"
+authors = ["Alfredo Braunstein <alfredo.braunstein@polito.it> and contributors"]
+version = "1.0.0-DEV"
+
+[deps]
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+
+[compat]
+julia = "1.9"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
