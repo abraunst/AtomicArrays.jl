@@ -1,5 +1,5 @@
 using Base.Threads
-import MacroTools: @forward
+import Lazy: @forward
 
 struct AtomicArray{T,N} <: AbstractArray{T,N}
     v::Array{T,N}

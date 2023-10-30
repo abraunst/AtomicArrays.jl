@@ -4,10 +4,11 @@ authors = ["Alfredo Braunstein <alfredo.braunstein@polito.it> and contributors"]
 version = "1.0.0"
 
 [deps]
-MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Lazy = "50d2b5c4-7a5e-59d5-8109-a42b560f39c0"
 
 [compat]
 julia = "1.9"
+Lazy = "0"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
