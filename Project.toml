@@ -1,7 +1,7 @@
 name = "AtomicArrays"
 uuid = "47b95ec9-9f64-4e52-930c-0b1ac2f8934e"
 authors = ["Alfredo Braunstein <alfredo.braunstein@polito.it> and contributors"]
-version = "1.0.0"
+version = "1.0.1"
 
 [deps]
 Lazy = "50d2b5c4-7a5e-59d5-8109-a42b560f39c0"
