@@ -22,9 +22,8 @@ end
     Base.eachindex, Base.firstindex, Base.lastindex, Base.pairs
 
 Base.eachindex(A::AtomicArray) = eachindex(A.v)
-Base.eachindex(s::IndexStyle, A::AtomicArray) = eachindex(s, A.v)
 
-function Base.getindex(a::AtomicArray, i...)
+function Base.getindex(a::AtomicArray, i::Int...)
     @boundscheck checkbounds(a, i...)
     @inbounds lock(a.s[i...])
     @inbounds x = a.v[i...]
@@ -32,7 +31,7 @@ function Base.getindex(a::AtomicArray, i...)
     x
 end
 
-function Base.setindex!(a::AtomicArray, x, i...)
+function Base.setindex!(a::AtomicArray, x, i::Int...)
     @boundscheck checkbounds(a, i...)
     @inbounds lock(a.s[i...])
     @inbounds a.v[i...] = x
